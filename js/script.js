@@ -63,7 +63,6 @@ logoLink.addEventListener('click', () => {
     }
 });
 
-
 const resumeBtns = document.querySelectorAll('.resume-btn');
 
 resumeBtns.forEach((btn, idx) => {
@@ -99,7 +98,6 @@ const activePortfolio = () => {
 
     portfolioDetails[index].classList.add('active');
 
-    // Handle disabling arrows
     arrowLeft.classList.toggle('disabled', index === 0);
     arrowRight.classList.toggle('disabled', index === portfolioDetails.length - 1);
 }
@@ -119,5 +117,4 @@ arrowLeft.addEventListener('click', () => {
     }
 });
 
-// Initialize state
 activePortfolio();
